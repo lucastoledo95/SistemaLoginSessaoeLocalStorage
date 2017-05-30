@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Sistema de usuários</title>
+<script type="text/javascript">
+function validaCampo()
+{
+if(document.login.user.value=="")
+{
+alert("Insira seu nome de usuário.");
+return false;
+}
+else
+if(document.login.pass.value=="")
+{
+alert("Insira sua senha.");
+return false;
+}
+else
+return true;
+}
+</script>
+
+</head>
+<body><br> <br><br> <br>
+<form action="login.php" method="post" name="login" id="login" class="login" onSubmit="return validaCampo(); return false;">
+<font face="Verdana" size="2">
+<h1>Login</h1>
+<hr /><center>
+Usuário: <br>
+<input type="text" name="user" id="user" class="user"> <br> <br>
+Senha: <br>
+<input type="password" name="pass" id="pass" class="user"> <br> <br>
+
+<input type="submit" value="Entrar"></center>
+</font>
+</form>
+</body>
+</html>
